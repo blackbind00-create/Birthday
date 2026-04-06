@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Mam!</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>Happy Birthday Mam! 🎉🎂</h1>
+        <p>Wishing you a very special day!</p>
+    </header>
+    
+    <aside>
+        <h2>Messages & Emojis</h2>
+        <p>🎈🎁🎊🎂</p>
+    </aside>
+    
+    <section id="content">
+        <p>Here's a beautiful birthday wish for Mam!</p>
+        <img src="birthday.jpg" alt="Birthday Image" width="300"/>
+        <p>Enjoy the celebration! 🎉</p>
+    </section>
+    
+    <!-- Puzzle section -->
+    <section id="puzzle">
+        <h2>Solve the Puzzle</h2>
+        <button onclick="checkAnswer()">What is 5 + 3?</button>
+        <input type="text" id="answer" placeholder="Type your answer"/>
+        <p id="result"></p>
+    </section>
+    
+    <!-- Game section -->
+    <section id="game">
+        <h2>Simple Memory Game</h2>
+        <button onclick="startGame()">Start Game</button>
+        <div id="memoryGame"></div>
+        <p id="gameMessage"></p>
+    </section>
+    
+    <!-- Song -->
+    <audio controls autoplay loop>
+        <source src="song.mp3" type="audio/mp3" />
+        Your browser does not support the audio element.
+    </audio>
+    
+    <script src="script.js"></script>
+</body>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe4e1; /* Light pink background */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+header {
+    text-align: center;
+    background-color: #ff69b4;
+    padding: 20px;
+    border-radius: 10px;
+    animation: bounce 2s infinite;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+}
+aside {
+    background-color: #fff0f5;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+section {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #ffe4e1;
+    border-radius: 10px;
+}
+button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #ff1493;
+}
+</html>
