@@ -260,6 +260,15 @@
             z-index: 100;
             border: 2px solid rgba(255,255,255,0.3);
         }
+        .music-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    margin-right: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 102, 0.5);
+}
 
         .music-btn {
             background: #ffd700;
@@ -702,14 +711,14 @@
     </nav>
 
     <!-- Music Player -->
-    <div class="music-player"></iframe>">
-        <button class="music-btn" onclick="toggleMusic()" id="musicBtn">▶️</button>
-        <div class="music-info">
-            <div style="font-weight: bold;">🎵 Birthday Song</div>
-            <div style="font-size: 0.8em; opacity: 0.8;">Click to play</div>
-        </div>
+<div class="music-player">
+    <img src="HBD.jpg" alt="MAM" class="music-photo">
+    <button class="music-btn" onclick="toggleMusic()" id="musicBtn">▶️</button>
+    <div class="music-info">
+        <div style="font-weight: bold;">🎵 Birthday Song</div>
+        <div style="font-size: 0.8em; opacity: 0.8;">Click to play</div>
     </div>
-
+</div>
     <!-- Main Content -->
     <main class="main-content">
         <!-- Hero Section -->
